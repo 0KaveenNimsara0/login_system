@@ -26,3 +26,8 @@ dist-ssr
 # envioramental file
 .env
 .env.local
+
+# Firebase cache & logs
+.firebase/
+firebase-debug.log
+firestore-debug.log
