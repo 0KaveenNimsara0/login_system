@@ -1,10 +1,13 @@
-import {Container,Paper,Typography,TextField,Button} from "@mui/material";
+import {Paper, Typography, TextField, Button } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import GoogleIcon from "@mui/icons-material/Google";
-import Facebook  from "@mui/icons-material/Facebook";
+import Facebook from "@mui/icons-material/Facebook";
 import AppleIcon from "@mui/icons-material/Apple";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import authService from "../services/authService";
+import loginIllustration from "../assets/login-illustration.svg";
+import Box from "@mui/material/Box";
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
@@ -57,7 +60,8 @@ const LoginPage = () => {
     };
 
     return (
-        <Container>
+        <Grid container>
+            <Grid size={{ xs: 12, md: 6 }}>
             <Paper>
                 <Typography>
                     Login
@@ -99,9 +103,18 @@ const LoginPage = () => {
                         <AppleIcon />
                     </Button>
                 </div>
-
             </Paper>
-        </Container>
+            </Grid>
+
+
+            <Grid size={{ xs: 12, md: 6 }}>
+                <Box
+                    component="img"
+                    src={loginIllustration}
+                    alt="Login illustration"
+                />
+            </Grid>
+        </Grid>
     );
 };
 
