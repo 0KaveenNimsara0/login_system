@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# firebase sdk
-firebase.ts
+# envioramental file
+.env
+.env.local
