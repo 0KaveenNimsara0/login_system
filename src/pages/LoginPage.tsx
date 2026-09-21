@@ -68,10 +68,10 @@ const LoginPage = () => {
         }
     };
 
+    // main grid
     return (
-        //main grid
         <Grid container sx={{ minHeight: "100vh" }}>
-            //main login grid
+            {/* main login grid */}
             <Grid size={{ xs: 12, md: 6 }}>
                 <Paper
                     elevation={0}
@@ -231,7 +231,7 @@ const LoginPage = () => {
             </Grid>
 
 
-            //image grid
+            {/* image grid */}
             <Grid
                 size={{ xs: 12, md: 6 }}
                 sx={{
